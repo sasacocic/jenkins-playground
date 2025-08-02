@@ -10,6 +10,8 @@ pipeline {
                 sh 'go version'
             }
         }
+
+        // TODO: run unit tests for go
     }
 }
 
