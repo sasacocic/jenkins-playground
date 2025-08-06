@@ -5,16 +5,16 @@
 pipeline {
     agent { docker { image 'golang:1.24.5-alpine3.22' } }
     stages {
-        stage('build') {
+        stage('build & test') {
             steps {
                 sh 'go version'
             }
-        }
 
-        stage('test') {
+
             steps {
                 sh 'go test ./cmd/...'
             }
+
         }
     }
 }
