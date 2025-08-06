@@ -1,6 +1,4 @@
 /.direnv
 /.envrc
-flake.nix
-flake.lock
 /credentials
 /.git
