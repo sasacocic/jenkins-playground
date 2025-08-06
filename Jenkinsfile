@@ -12,6 +12,12 @@ pipeline {
         }
 
         // TODO: run unit tests for go
+
+        stage('test') {
+            steps {
+                sh 'go test ./...'
+            }
+        }
     }
 }
 
