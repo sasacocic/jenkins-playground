@@ -8,13 +8,8 @@ pipeline {
         stage('build & test') {
             steps {
                 sh 'go version'
-            }
-
-
-            steps {
                 sh 'go test ./cmd/...'
             }
-
         }
     }
 }
