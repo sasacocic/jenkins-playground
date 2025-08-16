@@ -2,7 +2,7 @@
 /* Requires the Docker Pipeline plugin */
 
 // seems like it will run something in a docker container. still no idea what most of this stuff means.
-@Library("jenkins-pipeline-library") _
+@Library("jenkins-pipeline-library@main") _
 pipeline {
     
     // agent: tells jenkins where and how to execute the pipeline, or subset there of - required for all pipelines
