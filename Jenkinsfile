@@ -5,12 +5,12 @@
 @Library("jenkins-pipeline-library@main") _
 pipeline {
     
-    foo()
     // agent: tells jenkins where and how to execute the pipeline, or subset there of - required for all pipelines
     agent { docker { image 'golang:1.24.5-alpine3.22' } }
     stages {
         stage('build & test') {
             steps {
+                foo()
                 sh 'go version'
                 sh 'go test ./cmd/...'
             }
