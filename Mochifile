@@ -1,0 +1,19 @@
+
+
+
+info:
+    author: sasa@gmail.com
+
+
+one:
+    first: firstThing
+    second: secondThing
+
+tasks:
+    build: enabled
+    lint: enabled
+
+deploy:
+    dev: true
+    staging: true
+    prod: true
