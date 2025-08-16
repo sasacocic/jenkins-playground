@@ -10,6 +10,7 @@ pipeline {
     stages {
         stage('build & test') {
             steps {
+                println "yes"
                 foo()
                 sh 'go version'
                 sh 'go test ./cmd/...'
